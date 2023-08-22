@@ -1,9 +1,10 @@
 {
+    "MBC_lineSensorV1|block":"MBC循行者v1",
     "lineColor.black|block": "黑色",
     "lineColor.white|block": "白色",
     "calibColor.black|block": "黑色",
     "calibColor.white|block": "白色",
-    "MBC_lineSensorV1.init|block": "循行者初始化TX:|%txPin RX:|%rxPin",
+    "MBC_lineSensorV1.init|block": "循行者初始化|TX:%txPin|RX:%rxPin",
     "MBC_lineSensorV1.setLineColor|block": "循行者设定搜寻|%color",
     "MBC_lineSensorV1.getLineError|block": "读循线位置",
     "MBC_lineSensorV1.getLineWidth|block": "读循线宽度",
