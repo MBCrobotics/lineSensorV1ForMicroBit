@@ -1,3 +1,11 @@
+/*
+ * @copyright    [MBC_Robot](https://mbc-robot.com/), 2023
+ * @copyright    MIT Lesser General Public License
+ * 
+ * @author [email](mbc.robot89@gmail.com)
+ * @date  20230822
+ */
+
 enum lineColor {
     //% block="black"
     black = 0,
