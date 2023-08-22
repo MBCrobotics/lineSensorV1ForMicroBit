@@ -93,6 +93,29 @@ namespace MBC_lineSensorV1 {
         return receivedByte;
     }
 
+    //% block="getEachSensorBool|%each" weight=6
+    //% each.min=0 each.max=7
+    export function getEachSensorBool(each: number): bool {
+        if (each % 1 !== 0) {
+            // If it's a float, convert it to an integer
+            each = Math.round(each);
+        }
+        if (each < 0) each = 0;
+        if (each > 7) each = 7;
+        serial.writeString("" + (each << 4 | 3));
+        let receivedByte = 0;
+        while (1) {
+            let serialData = serial.readBuffer(0)
+            if (serialData.length > 0) {
+                receivedByte = serialData[0]
+                break;
+            }
+        }
+        // 清空暫存
+        while (serial.readBuffer(0).length > 0);
+        return (receivedByte<50);
+    }
+    
     //% block="setCalibrate|%color" weight=5
     export function setCalibrate(color: calibColor) {
         serial.writeString("" + (color << 4 | (5 + color)));
