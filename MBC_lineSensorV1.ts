@@ -31,7 +31,7 @@ namespace MBC_lineSensorV1 {
         serial.redirect(txPin, rxPin, 38400);
     }
 
-    //% block="setLineColor %color " weight=9
+    //% block="setLineColor|%color " weight=9
     export function setLineColor(color: lineColor): void {
         serial.writeString("" + (color << 4 | 4));
     }
@@ -70,7 +70,7 @@ namespace MBC_lineSensorV1 {
         return receivedByte;
     }
 
-    //% block="getEachSensor %each" weight=6
+    //% block="getEachSensor|%each" weight=6
     //% each.min=0 each.max=7
     export function getEachSensor(each: number): number {
         if (each % 1 !== 0) {
@@ -93,7 +93,7 @@ namespace MBC_lineSensorV1 {
         return receivedByte;
     }
 
-    //% block="setCalibrate %color " weight=5
+    //% block="setCalibrate|%color " weight=5
     export function setCalibrate(color: calibColor) {
         serial.writeString("" + (color << 4 | (5 + color)));
     }
