@@ -24,7 +24,7 @@ enum calibColor {
  */
 //%weight=100 color=#0fbc11 icon="\uf072"
 namespace MBC_lineSensorV1 {
-    //% block="init|TX:%txPin=SerialPin|RX:%rxPin" weight=10
+    //% block="init|TX:%txPin|RX:%rxPin" weight=10
     //% txPin.defl=SerialPin.P0
     //% rxPin.defl=SerialPin.P1
     export function init(txPin: SerialPin, rxPin: SerialPin): void {
