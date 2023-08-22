@@ -1,0 +1,22 @@
+{
+    "name": "MBC_lineSensorV1",
+    "version": "1.0.0",
+    "description": "lineSensor for microBit",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts"
+    ],
+    "testFiles": [
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "license": "MIT"
+}
