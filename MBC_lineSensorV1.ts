@@ -93,9 +93,9 @@ namespace MBC_lineSensorV1 {
         return receivedByte;
     }
 
-    //% block="getEachSensorBool|%each" weight=6
+    //% block="getEachSensorBool|%each" weight=5
     //% each.min=0 each.max=7
-    export function getEachSensorBool(each: number): bool {
+    export function getEachSensorBool(each: number): boolean {
         if (each % 1 !== 0) {
             // If it's a float, convert it to an integer
             each = Math.round(each);
@@ -116,7 +116,7 @@ namespace MBC_lineSensorV1 {
         return (receivedByte<50);
     }
     
-    //% block="setCalibrate|%color" weight=5
+    //% block="setCalibrate|%color" weight=4
     export function setCalibrate(color: calibColor) {
         serial.writeString("" + (color << 4 | (5 + color)));
     }
