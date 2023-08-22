@@ -1,8 +1,8 @@
 {
-    "lineColor.Black|block": "黑色",
-    "lineColor.White|block": "白色",
-    "calibColor.Black|block": "黑色",
-    "calibColor.White|block": "白色",
+    "lineColor.black|block": "黑色",
+    "lineColor.white|block": "白色",
+    "calibColor.black|block": "黑色",
+    "calibColor.white|block": "白色",
     "MBC_lineSensorV1.init|block": "循行者初始化TX:|%txPin RX:|%rxPin",
     "MBC_lineSensorV1.setLineColor|block": "循行者設定搜尋|%lineColor",
     "MBC_lineSensorV1.getLineError|block": "讀循線位置",
