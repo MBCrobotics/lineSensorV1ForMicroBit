@@ -24,14 +24,14 @@ enum calibColor {
  */
 //%weight=100 color=#0fbc11 icon="\uf072"
 namespace MBC_lineSensorV1 {
-    //% block="init|TX:%txPin=SerialPin |RX:%rxPin" weight=10
+    //% block="init|TX:%txPin=SerialPin|RX:%rxPin" weight=10
     //% txPin.defl=SerialPin.P0
     //% rxPin.defl=SerialPin.P1
     export function init(txPin: SerialPin, rxPin: SerialPin): void {
         serial.redirect(txPin, rxPin, 38400);
     }
 
-    //% block="setLineColor|%color " weight=9
+    //% block="setLineColor|%color" weight=9
     export function setLineColor(color: lineColor): void {
         serial.writeString("" + (color << 4 | 4));
     }
@@ -93,7 +93,7 @@ namespace MBC_lineSensorV1 {
         return receivedByte;
     }
 
-    //% block="setCalibrate|%color " weight=5
+    //% block="setCalibrate|%color" weight=5
     export function setCalibrate(color: calibColor) {
         serial.writeString("" + (color << 4 | (5 + color)));
     }
