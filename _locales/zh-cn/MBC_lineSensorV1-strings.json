@@ -1,12 +1,12 @@
 {
-    "lineColor.Black|block": "黑色",
-    "lineColor.White|block": "白色",
-    "calibColor.Black|block": "黑色",
-    "calibColor.White|block": "白色",
+    "lineColor.black|block": "黑色",
+    "lineColor.white|block": "白色",
+    "calibColor.black|block": "黑色",
+    "calibColor.white|block": "白色",
     "MBC_lineSensorV1.init|block": "循行者初始化TX:|%txPin RX:|%rxPin",
-    "MBC_lineSensorV1.setLineColor|block": "循行者设定搜寻|%lineColor",
+    "MBC_lineSensorV1.setLineColor|block": "循行者设定搜寻|%color",
     "MBC_lineSensorV1.getLineError|block": "读循线位置",
     "MBC_lineSensorV1.getLineWidth|block": "读循线宽度",
     "MBC_lineSensorV1.getEachSensor|block": "读|%each 号数值",
-    "MBC_lineSensorV1.setCalibrate|block": "循行者校正|%calibColor"
+    "MBC_lineSensorV1.setCalibrate|block": "循行者校正|%color"
 }
