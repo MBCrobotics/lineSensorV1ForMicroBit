@@ -9,7 +9,9 @@
     },
     "files": [
         "README.md",
-        "main.ts"
+        "MBC_lineSensorV1.ts",
+        "_locales/zh-cn/MBC_lineSensorV1-strings.json",
+        "_locales/zh-tw/MBC_lineSensorV1-strings.json"
     ],
     "testFiles": [
     ],
