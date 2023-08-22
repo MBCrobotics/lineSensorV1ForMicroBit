@@ -1,8 +1,3 @@
-
-/**
-* ¨Ï¥Î³o­Ó¤å¥ó¨Ó©w¸q¦Û­qªº¨ç¦¡©M¿n¤ì¡C
-* ¶i¤@¨B¤F¸Ñ¡Ghttps://makecode.microbit.org/blocks/custom
-*/
 enum lineColor {
     //% block="black"
     black = 0,
@@ -44,9 +39,9 @@ namespace MBC_lineSensorV1 {
                 break;
             }
         }
-        // ²MªÅ¼È¦s
+        // æ¸…ç©ºæš«å­˜
         while (serial.readBuffer(0).length > 0);
-        // ¶i¦æ­ÈªºÂà´«
+        // é€²è¡Œå€¼çš„è½‰æ›
         let convertedValue = receivedByte > 127 ? receivedByte - 256 : receivedByte;
         return convertedValue;
     }
@@ -62,7 +57,7 @@ namespace MBC_lineSensorV1 {
                 break;
             }
         }
-        // ²MªÅ¼È¦s
+        // æ¸…ç©ºæš«å­˜
         while (serial.readBuffer(0).length > 0);
         return receivedByte;
     }
@@ -85,7 +80,7 @@ namespace MBC_lineSensorV1 {
                 break;
             }
         }
-        // ²MªÅ¼È¦s
+        // æ¸…ç©ºæš«å­˜
         while (serial.readBuffer(0).length > 0);
         return receivedByte;
     }
