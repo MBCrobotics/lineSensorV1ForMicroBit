@@ -9,5 +9,6 @@
     "MBC_lineSensorV1.getLineError|block": "讀循線位置",
     "MBC_lineSensorV1.getLineWidth|block": "讀循線寬度",
     "MBC_lineSensorV1.getEachSensor|block": "讀|%each 號數值",
+    "MBC_lineSensorV1.getEachSensorBool|block": "讀|%each 號狀態",
     "MBC_lineSensorV1.setCalibrate|block": "循行者校正|%color"
 }
