@@ -1,5 +1,3 @@
-## Use as Extension
-
 # lineSensorV1 blocks for micro:bit
 
 ## License
