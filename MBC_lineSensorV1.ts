@@ -79,7 +79,7 @@ namespace MBC_lineSensorV1 {
         }
         if (each < 0) each = 0;
         if (each > 7) each = 7;
-        serial.writeString("" + (each << 4 | 3));
+        serial.writeString("" + ((7-each) << 4 | 3));
         let receivedByte = 0;
         while (1) {
             let serialData = serial.readBuffer(0)
@@ -102,7 +102,7 @@ namespace MBC_lineSensorV1 {
         }
         if (each < 0) each = 0;
         if (each > 7) each = 7;
-        serial.writeString("" + (each << 4 | 3));
+        serial.writeString("" + ((7-each) << 4 | 3));
         let receivedByte = 0;
         while (1) {
             let serialData = serial.readBuffer(0)
